@@ -8,7 +8,7 @@
 | --- | --- |
 | Nama | Jana Rohman Wasiso |
 | NIM | 123140046 |
-| Kelas Praktikum | Belum diinformasikan |
+| Kelas Praktikum | PAW RB |
 
 ## Deskripsi Aplikasi
 
@@ -67,6 +67,3 @@ Jana_123140046_pertemuan1/
 ### Perhitungan dan tabel keranjang
 ![Tabel keranjang serta hasil perhitungan](screenshots/03-keranjang-dan-perhitungan.png)
 
-## Repository
-
-Repository publik yang dituju: `https://github.com/10-046-JanaRohman/pemrograman_web_itera_123140046`
