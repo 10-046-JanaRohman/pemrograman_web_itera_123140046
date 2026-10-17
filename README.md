@@ -2,7 +2,7 @@
 
 - **Nama:** Jana Rohman Wasiso
 - **NIM:** 123140046
-- **Kelas:** PAW (belum diinformasikan)
+- **Kelas:** PAW RB
 
 ## Daftar Pertemuan
 
