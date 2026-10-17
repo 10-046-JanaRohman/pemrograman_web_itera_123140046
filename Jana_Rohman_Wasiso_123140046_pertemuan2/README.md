@@ -14,6 +14,10 @@
 
 **RuangKampus** adalah personal dashboard produktivitas untuk mahasiswa. Aplikasi membantu mencatat agenda kuliah secara cepat, melihat prioritas, memantau progres tugas, dan mendapatkan kutipan motivasi harian. Data tugas tetap tersimpan di browser sehingga agenda tidak hilang saat halaman dimuat ulang.
 
+## Tujuan Pembuatan
+
+Dashboard ini dibuat untuk membantu mahasiswa mengatur tugas kuliah dalam satu ruang kerja sederhana. Pengguna dapat mencatat tugas yang baru diberikan, menentukan prioritas serta tenggat waktu, lalu memantau tugas yang sudah diselesaikan tanpa memerlukan akun atau database eksternal.
+
 ## Fitur Utama
 
 - CRUD agenda: tambah, edit, tandai selesai, hapus, dan bersihkan seluruh tugas selesai.
@@ -22,6 +26,22 @@
 - Penyimpanan data persisten menggunakan `localStorage` dan `JSON.stringify()`/`JSON.parse()`.
 - Widget kutipan motivasi dari DummyJSON Quotes memakai `fetch()` dan `async`/`await`, dengan fallback offline.
 - Desain responsif untuk desktop serta ponsel.
+
+## Alur Penggunaan
+
+1. Pengguna mengisi judul tugas, mata kuliah, prioritas, dan batas waktu pada panel **Quick Capture**.
+2. Sistem memvalidasi judul tugas. Tugas yang valid langsung muncul pada daftar agenda.
+3. Pengguna dapat mencari tugas, menggunakan filter status, menandai tugas selesai, atau menghapus tugas yang tidak diperlukan.
+4. Tombol edit membuka form untuk memperbarui judul, mata kuliah, prioritas, dan tenggat waktu.
+5. Ringkasan tugas dan progres diperbarui otomatis pada setiap perubahan, lalu data disimpan di `localStorage`.
+6. Widget kutipan mengambil data asinkron dari DummyJSON dan tetap menampilkan kutipan cadangan jika koneksi gagal.
+
+## Teknologi yang Digunakan
+
+- **HTML5** dan **CSS3** untuk struktur serta desain dashboard responsif.
+- **JavaScript ES6+** untuk classes, arrow functions, template literals, destructuring, spread operator, dan modern array methods.
+- **Web Storage API** untuk menyimpan agenda secara lokal melalui `localStorage`.
+- **Fetch API** dengan `async`/`await` untuk menampilkan kutipan motivasi.
 
 ## Struktur Folder
 
@@ -63,14 +83,20 @@ Jana_Rohman_Wasiso_123140046_pertemuan2/
 
 ## Tangkapan Layar
 
-### Dashboard utama
+### Gambar 1. Tampilan Utama RuangKampus
 ![Dashboard utama](screenshots/01-dashboard-utama.png)
 
-### Validasi dan tambah agenda
+Gambar 1 menunjukkan dashboard utama yang memuat kutipan harian, statistik agenda, indikator progres, formulir Quick Capture, dan daftar tugas mahasiswa. Data awal memberi contoh tampilan saat dashboard pertama kali dibuka.
+
+### Gambar 2. Validasi Form Agenda
 ![Validasi form agenda](screenshots/02-validasi-form.png)
 
-### Edit dan progres agenda
+Gambar 2 menunjukkan validasi ketika judul tugas kurang dari tiga karakter. Pesan kesalahan muncul di bawah input dan tugas tidak akan disimpan sampai pengguna memasukkan judul yang valid.
+
+### Gambar 3. Form Edit Agenda
 ![Edit serta progres agenda](screenshots/03-edit-dan-progres.png)
+
+Gambar 3 menunjukkan modal edit untuk mengubah data agenda. Setelah perubahan disimpan, daftar tugas, jumlah tugas, dan progres mingguan diperbarui secara otomatis.
 
 ## API Publik
 
