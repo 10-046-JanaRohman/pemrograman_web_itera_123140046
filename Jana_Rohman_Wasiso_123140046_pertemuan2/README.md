@@ -8,7 +8,7 @@
 | --- | --- |
 | Nama | Jana Rohman Wasiso |
 | NIM | 123140046 |
-| Kelas Praktikum | Belum diinformasikan |
+| Kelas Praktikum | PAW RB |
 
 ## Deskripsi
 
