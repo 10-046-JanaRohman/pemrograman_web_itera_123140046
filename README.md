@@ -9,5 +9,6 @@
 | Pertemuan | Tugas | Folder |
 | --- | --- | --- |
 | 1 | Aplikasi Kasir & Keranjang Belanja Sederhana (Mini POS) | [`Jana_Rohman_Wasiso_123140046_pertemuan1`](Jana_Rohman_Wasiso_123140046_pertemuan1/) |
+| 2 | Personal Dashboard - RuangKampus | [`Jana_Rohman_Wasiso_123140046_pertemuan2`](Jana_Rohman_Wasiso_123140046_pertemuan2/) |
 
 Setiap folder pertemuan berisi file aplikasi, dokumentasi, folder latihan modul, dan screenshot hasil pengerjaan.

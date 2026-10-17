@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RuangKampus, personal dashboard produktivitas mahasiswa." />
+    <title>RuangKampus | Personal Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page-glow glow-one"></div>
+    <div class="page-glow glow-two"></div>
+    <header class="topbar">
+      <a class="brand" href="#dashboard" aria-label="RuangKampus dashboard">
+        <span class="brand-symbol" aria-hidden="true">R</span>
+        <span>Ruang<span>Kampus</span></span>
+      </a>
+      <div class="topbar-meta"><span class="live-dot"></span><span>tersimpan lokal</span><span class="profile-initial">J</span></div>
+    </header>
+
+    <main id="dashboard" class="dashboard-shell">
+      <section class="welcome-section" aria-labelledby="dashboard-title">
+        <div>
+          <p class="section-kicker">PERSONAL STUDY SPACE</p>
+          <h1 id="dashboard-title">Halo, Jana. <span>Siap menuntaskan hari ini?</span></h1>
+          <p id="current-date" class="current-date"></p>
+        </div>
+        <button id="new-task-button" class="primary-button" type="button"><span>+</span> Tambah tugas</button>
+      </section>
+
+      <section class="quote-card" aria-labelledby="quote-label">
+        <div class="quote-icon" aria-hidden="true">“</div>
+        <div class="quote-content">
+          <p id="quote-label" class="quote-label">CATATAN HARI INI</p>
+          <blockquote id="quote-text">Memuat kutipan untuk menyemangati harimu…</blockquote>
+          <p id="quote-author" class="quote-author">Menghubungkan ke sumber inspirasi</p>
+        </div>
+        <button id="refresh-quote" class="icon-button" type="button" aria-label="Muat kutipan baru">↻</button>
+      </section>
+
+      <section class="metrics" aria-label="Ringkasan tugas">
+        <article class="metric-card"><span class="metric-icon violet">◫</span><div><strong id="total-count">0</strong><p>Total tugas</p></div></article>
+        <article class="metric-card"><span class="metric-icon peach">◷</span><div><strong id="today-count">0</strong><p>Perlu hari ini</p></div></article>
+        <article class="metric-card"><span class="metric-icon mint">✓</span><div><strong id="completed-count">0</strong><p>Sudah selesai</p></div></article>
+        <article class="metric-card progress-card"><div class="progress-heading"><span>Progres minggu ini</span><strong id="progress-percent">0%</strong></div><div class="progress-track"><span id="progress-bar"></span></div><p id="progress-caption">Mulai dari satu tugas kecil.</p></article>
+      </section>
+
+      <section class="workspace">
+        <aside class="agenda-panel">
+          <div class="panel-heading"><div><p class="section-kicker">QUICK CAPTURE</p><h2>Catat sebelum lupa.</h2></div><span class="spark" aria-hidden="true">✦</span></div>
+          <form id="task-form" novalidate>
+            <div class="form-field">
+              <label for="task-title">Apa yang perlu dikerjakan?</label>
+              <input id="task-title" name="title" type="text" placeholder="Contoh: Selesaikan laporan PAW" autocomplete="off" />
+              <p class="error-text" id="title-error" aria-live="polite"></p>
+            </div>
+            <div class="form-grid">
+              <div class="form-field"><label for="task-course">Mata kuliah</label><select id="task-course" name="course"><option value="PAW">PAW</option><option value="Pemrograman">Pemrograman</option><option value="Basis Data">Basis Data</option><option value="Umum">Umum</option></select></div>
+              <div class="form-field"><label for="task-priority">Prioritas</label><select id="task-priority" name="priority"><option value="high">Tinggi</option><option value="medium" selected>Sedang</option><option value="low">Rendah</option></select></div>
+            </div>
+            <div class="form-field"><label for="task-date">Batas waktu</label><input id="task-date" name="dueDate" type="date" /></div>
+            <button class="secondary-button" type="submit">Simpan ke agenda <span>→</span></button>
+          </form>
+          <div class="focus-tip"><span aria-hidden="true">✦</span><p><strong>Fokus 25 menit</strong><br />Pecah tugas besar menjadi langkah kecil agar lebih mudah dimulai.</p></div>
+        </aside>
+
+        <section class="tasks-panel" aria-labelledby="tasks-title">
+          <div class="tasks-header"><div><p class="section-kicker">MY AGENDA</p><h2 id="tasks-title">Tugas yang menunggu</h2></div><button id="clear-completed" class="text-button" type="button">Bersihkan selesai</button></div>
+          <div class="toolbar"><div class="filter-tabs" role="group" aria-label="Filter tugas"><button class="filter-button active" data-filter="all" type="button">Semua</button><button class="filter-button" data-filter="today" type="button">Hari ini</button><button class="filter-button" data-filter="open" type="button">Belum selesai</button><button class="filter-button" data-filter="done" type="button">Selesai</button></div><label class="search-box"><span aria-hidden="true">⌕</span><input id="search-task" type="search" placeholder="Cari tugas" /></label></div>
+          <div id="task-list" class="task-list" aria-live="polite"></div>
+          <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">✦</span><strong>Agenda sedang lengang.</strong><p>Tambahkan tugas pertamamu dari panel di sebelah kiri.</p></div>
+        </section>
+      </section>
+    </main>
+
+    <dialog id="edit-dialog" class="edit-dialog">
+      <form id="edit-form" method="dialog">
+        <div class="dialog-heading"><div><p class="section-kicker">UPDATE AGENDA</p><h2>Edit tugas</h2></div><button id="close-dialog" class="icon-button" type="button" aria-label="Tutup form edit">×</button></div>
+        <input id="edit-id" type="hidden" />
+        <div class="form-field"><label for="edit-title">Nama tugas</label><input id="edit-title" type="text" required /></div>
+        <div class="form-grid"><div class="form-field"><label for="edit-course">Mata kuliah</label><select id="edit-course"><option value="PAW">PAW</option><option value="Pemrograman">Pemrograman</option><option value="Basis Data">Basis Data</option><option value="Umum">Umum</option></select></div><div class="form-field"><label for="edit-priority">Prioritas</label><select id="edit-priority"><option value="high">Tinggi</option><option value="medium">Sedang</option><option value="low">Rendah</option></select></div></div>
+        <div class="form-field"><label for="edit-date">Batas waktu</label><input id="edit-date" type="date" /></div>
+        <button class="primary-button" type="submit">Simpan perubahan</button>
+      </form>
+    </dialog>
+
+    <footer>RuangKampus • Dashboard produktivitas mahasiswa • PAW Pertemuan 2</footer>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
