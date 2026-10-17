@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aplikasi kasir dan keranjang belanja sederhana untuk praktikum PAW ITERA."
+    />
+    <title>KantinKu POS | Jana Rohman Wasiso</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#beranda" aria-label="KantinKu POS beranda">
+        <span class="brand-mark" aria-hidden="true">K</span>
+        <span>KantinKu <strong>POS</strong></span>
+      </a>
+      <p class="identity">Jana Rohman Wasiso <span>•</span> 123140046</p>
+    </header>
+
+    <main id="beranda" class="page-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">PRAKTIKUM PAW • PERTEMUAN 1</p>
+          <h1 id="page-title">Kasir yang simpel,<br /><em>transaksi yang cepat.</em></h1>
+          <p class="hero-copy">Kelola pesanan kantin kampus dalam satu halaman. Tambah barang, cek total, lalu selesaikan pembayaran.</p>
+        </div>
+        <div class="hero-note" aria-label="Informasi diskon">
+          <span class="note-icon" aria-hidden="true">%</span>
+          <div><strong>Diskon otomatis 10%</strong><small>untuk belanja mulai Rp50.000</small></div>
+        </div>
+      </section>
+
+      <section class="pos-layout" aria-label="Aplikasi kasir">
+        <div class="left-column">
+          <article class="panel item-panel">
+            <div class="panel-heading">
+              <div><span class="section-number">01</span><h2>Tambah barang</h2></div>
+              <p>Isi detail pesanan pelanggan.</p>
+            </div>
+            <form id="item-form" novalidate>
+              <div class="field-group full-field">
+                <label for="item-name">Nama barang</label>
+                <input id="item-name" name="itemName" type="text" placeholder="Contoh: Es Teh Manis" autocomplete="off" />
+                <p class="error-message" id="item-name-error" aria-live="polite"></p>
+              </div>
+              <div class="input-grid">
+                <div class="field-group">
+                  <label for="item-price">Harga satuan</label>
+                  <div class="input-prefix"><span>Rp</span><input id="item-price" name="itemPrice" type="number" min="500" step="500" placeholder="0" inputmode="numeric" /></div>
+                  <p class="error-message" id="item-price-error" aria-live="polite"></p>
+                </div>
+                <div class="field-group">
+                  <label for="item-quantity">Jumlah / Qty</label>
+                  <input id="item-quantity" name="itemQuantity" type="number" min="1" step="1" value="1" inputmode="numeric" />
+                  <p class="error-message" id="item-quantity-error" aria-live="polite"></p>
+                </div>
+              </div>
+              <button class="button button-primary" type="submit"><span aria-hidden="true">+</span> Tambah ke keranjang</button>
+            </form>
+          </article>
+
+          <article class="panel cart-panel">
+            <div class="panel-heading cart-heading">
+              <div><span class="section-number">02</span><h2>Keranjang belanja</h2></div>
+              <span class="item-badge" id="item-count">0 item</span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>No</th><th>Nama barang</th><th>Harga satuan</th><th>Qty</th><th>Subtotal</th><th><span class="visually-hidden">Aksi</span></th></tr></thead>
+                <tbody id="cart-body"></tbody>
+              </table>
+              <div class="empty-state" id="empty-state">
+                <span class="empty-icon" aria-hidden="true">⌁</span>
+                <strong>Keranjang masih kosong</strong>
+                <p>Tambahkan barang pertama untuk memulai transaksi.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <aside class="right-column" aria-label="Ringkasan transaksi">
+          <article class="summary-card">
+            <div class="summary-heading"><span class="section-number light">03</span><h2>Ringkasan</h2></div>
+            <div class="summary-row"><span>Total belanja</span><strong id="subtotal-value">Rp0</strong></div>
+            <div class="summary-row discount-row"><span>Diskon <small id="discount-caption">(belum memenuhi syarat)</small></span><strong id="discount-value">- Rp0</strong></div>
+            <div class="total-row"><span>Total akhir</span><strong id="total-value">Rp0</strong></div>
+            <div class="summary-divider"></div>
+            <label class="payment-label" for="payment">Uang bayar</label>
+            <div class="payment-input"><span>Rp</span><input id="payment" type="number" min="0" step="500" placeholder="Masukkan nominal" inputmode="numeric" /></div>
+            <p id="payment-status" class="payment-status" aria-live="polite">Masukkan uang bayar untuk menghitung kembalian.</p>
+            <div class="change-box" id="change-box"><span>Kembalian</span><strong id="change-value">Rp0</strong></div>
+            <button class="button button-reset" id="reset-button" type="button">↻ Transaksi baru</button>
+          </article>
+          <p class="storage-status"><span class="storage-dot" aria-hidden="true"></span>Keranjang tersimpan otomatis di perangkat ini</p>
+        </aside>
+      </section>
+    </main>
+
+    <footer>© 2026 KantinKu POS • Praktikum Pengembangan Aplikasi Web ITERA</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
