@@ -97,7 +97,3 @@ Gambar 2 menunjukkan validasi ketika judul tugas kurang dari tiga karakter. Pesa
 ![Edit serta progres agenda](screenshots/03-edit-dan-progres.png)
 
 Gambar 3 menunjukkan modal edit untuk mengubah data agenda. Setelah perubahan disimpan, daftar tugas, jumlah tugas, dan progres mingguan diperbarui secara otomatis.
-
-## API Publik
-
-- [DummyJSON Quotes](https://dummyjson.com/quotes/random) untuk kutipan motivasi.
