@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1210" height="680" viewBox="0 0 1210 680">
+  <rect width="1210" height="680" fill="#10151f"/>
+  <rect x="0" y="0" width="1210" height="46" fill="#202938"/>
+  <circle cx="28" cy="23" r="8" fill="#ff605c"/><circle cx="54" cy="23" r="8" fill="#ffbd44"/><circle cx="80" cy="23" r="8" fill="#00ca4e"/>
+  <text x="110" y="29" fill="#d8e1ef" font-family="Consolas, monospace" font-size="17">Windows PowerShell — main.py</text>
+  <g fill="#e6edf7" font-family="Consolas, monospace" font-size="18">
+    <text x="30" y="80" fill="#78e08f">PS C:\praktikum&gt; python main.py</text>
+    <text x="30" y="118">==========================================================</text>
+    <text x="30" y="146">       DEMO MODUL MATEMATIKA &amp; KONVERSI SUHU</text>
+    <text x="30" y="174">==========================================================</text>
+    <text x="30" y="222">[1] BANGUN DATAR</text>
+    <text x="30" y="250">Konstanta PI                 : 3.14159</text>
+    <text x="30" y="278">Persegi (sisi 8)    → Luas: 64.00 | Keliling: 32.00</text>
+    <text x="30" y="306">Persegi panjang (12 x 5) → Luas: 60.00 | Keliling: 34.00</text>
+    <text x="30" y="334">Lingkaran (jari-jari 7) → Luas: 153.94 | Keliling: 43.98</text>
+    <text x="30" y="390">[2] KONVERSI SUHU</text>
+    <text x="30" y="418">Celsius                      : 28.00 °C</text>
+    <text x="30" y="446" fill="#78e08f">Celsius ke Fahrenheit        : 82.40 °F</text>
+    <text x="30" y="474" fill="#78e08f">Celsius ke Kelvin            : 301.15 K</text>
+    <text x="30" y="514">==========================================================</text>
+    <text x="30" y="574" fill="#78e08f">PS C:\praktikum&gt; _</text>
+  </g>
+</svg>

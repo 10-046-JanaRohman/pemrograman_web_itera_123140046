@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="520" viewBox="0 0 1120 520">
+  <rect width="1120" height="520" fill="#10151f"/>
+  <rect x="0" y="0" width="1120" height="46" fill="#202938"/>
+  <circle cx="28" cy="23" r="8" fill="#ff605c"/><circle cx="54" cy="23" r="8" fill="#ffbd44"/><circle cx="80" cy="23" r="8" fill="#00ca4e"/>
+  <text x="110" y="29" fill="#d8e1ef" font-family="Consolas, monospace" font-size="17">Windows PowerShell — tugas1_bmi.py</text>
+  <g fill="#e6edf7" font-family="Consolas, monospace" font-size="19">
+    <text x="34" y="84" fill="#78e08f">PS C:\praktikum&gt; python tugas1_bmi.py</text>
+    <text x="34" y="124">====================================================</text>
+    <text x="34" y="154">       PENGHITUNG BODY MASS INDEX (BMI)</text>
+    <text x="34" y="184">====================================================</text>
+    <text x="34" y="224">Nama          : Jana Rohman Wasiso</text>
+    <text x="34" y="254">NIM           : 123140046</text>
+    <text x="34" y="294">Berat badan   : 64.0 kg</text>
+    <text x="34" y="324">Tinggi badan  : 1.70 m</text>
+    <text x="34" y="354">Nilai BMI     : 22.15</text>
+    <text x="34" y="384" fill="#78e08f">Kategori      : Berat badan normal</text>
+    <text x="34" y="424">====================================================</text>
+    <text x="34" y="474" fill="#78e08f">PS C:\praktikum&gt; _</text>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <rect width="1280" height="640" fill="#10151f"/>
+  <rect x="0" y="0" width="1280" height="46" fill="#202938"/>
+  <circle cx="28" cy="23" r="8" fill="#ff605c"/><circle cx="54" cy="23" r="8" fill="#ffbd44"/><circle cx="80" cy="23" r="8" fill="#00ca4e"/>
+  <text x="110" y="29" fill="#d8e1ef" font-family="Consolas, monospace" font-size="17">Windows PowerShell — tugas2_nilai_mahasiswa.py</text>
+  <g fill="#e6edf7" font-family="Consolas, monospace" font-size="17">
+    <text x="30" y="80" fill="#78e08f">PS C:\praktikum&gt; python tugas2_nilai_mahasiswa.py</text>
+    <text x="30" y="116">DATA NILAI MAHASISWA - PRAKTIKUM PEMROGRAMAN WEB</text>
+    <text x="30" y="150">+----+--------------------------+------------+------------+-------+</text>
+    <text x="30" y="178">| No | Nama                     | NIM        | Nilai Akhir| Grade |</text>
+    <text x="30" y="206">+----+--------------------------+------------+------------+-------+</text>
+    <text x="30" y="234">| 1  | Jana Rohman Wasiso       | 123140046  |      90.20 |   A   |</text>
+    <text x="30" y="262">| 2  | Adelia Ramadani          | 123140183  |      80.40 |   A   |</text>
+    <text x="30" y="290">| 3  | Aditya Hot Martua Sihite | 123140114  |      66.90 |   C   |</text>
+    <text x="30" y="318">| 4  | Abel Fortino             | 123140111  |      57.70 |   D   |</text>
+    <text x="30" y="346">| 5  | Muhammad Rafi Ilham      | 123140173  |      45.30 |   E   |</text>
+    <text x="30" y="374">+----+--------------------------+------------+------------+-------+</text>
+    <text x="30" y="430">RINGKASAN NILAI</text>
+    <text x="30" y="458">----------------------------------------------------</text>
+    <text x="30" y="486" fill="#78e08f">Nilai tertinggi : Jana Rohman Wasiso (90.20, Grade A)</text>
+    <text x="30" y="514" fill="#ffb86c">Nilai terendah  : Muhammad Rafi Ilham (45.30, Grade E)</text>
+    <text x="30" y="574" fill="#78e08f">PS C:\praktikum&gt; _</text>
+  </g>
+</svg>
