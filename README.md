@@ -12,5 +12,6 @@
 | 2 | Personal Dashboard - RuangKampus | [`Jana_Rohman_Wasiso_123140046_pertemuan2`](Jana_Rohman_Wasiso_123140046_pertemuan2/) |
 | 3 | Manajemen Buku Pribadi - Litera | [`Jana_Rohman_Wasiso_123140046_pertemuan3`](Jana_Rohman_Wasiso_123140046_pertemuan3/) |
 | 4 | Dasar Pemrograman Python | [`Jana_Rohman_Wasiso_123140046_pertemuan4`](Jana_Rohman_Wasiso_123140046_pertemuan4/) |
+| 5 | Sistem Manajemen Perpustakaan Berbasis OOP | [`Jana_Rohman_Wasiso_123140046_pertemuan5`](Jana_Rohman_Wasiso_123140046_pertemuan5/) |
 
 Setiap folder pertemuan berisi file aplikasi, dokumentasi, folder latihan modul, dan screenshot hasil pengerjaan.
